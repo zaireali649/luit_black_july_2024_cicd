@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Uploading index.html to S3..."
+      - aws s3 cp index.html s3://luit-black-july-2024-beta --acl public-read
